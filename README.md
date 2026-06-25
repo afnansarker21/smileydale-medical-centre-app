@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
@@ -48,3 +49,9 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+=======
+# smileydale-medical-centre-app
+Patients are able to make early bookings to see a General Practitioner at Smileydale Medical Centre (demo, not real medical centre). 
+
+Coming soon
+>>>>>>> 870e36571bb6b1cb106199c5ac2d9347d1648f83
