@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function ServicesScreen() {
@@ -10,7 +10,7 @@ export default function ServicesScreen() {
 
       {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.headerText}>SmileyDale</Text>
+        <Image source={require("../../assets/images/logo.png")} style={styles.logo} />
       </View>
 
       <ScrollView contentContainerStyle={styles.content}
@@ -22,6 +22,8 @@ export default function ServicesScreen() {
         <View style={styles.card}>
 
           <Text style={styles.title}>Our Services</Text>
+
+          <Text style={styles.subtitle}>Please note, we do not accept walk-in appointments. <Text style={{ fontWeight: "bold" }}>Scroll down for more information.</Text></Text>
 
           <Text style={styles.subtitle}>
             At  <Text style={{ fontWeight: "bold" }}>SmileyDale Medical Centre</Text>, we aim to provide comprehensive and compassionate healthcare to our community. We offer a range of services with our 8 talented general practitioners, including:
@@ -94,15 +96,24 @@ export default function ServicesScreen() {
 
 const styles = StyleSheet.create({
 
-    header: {
-  width: "100%",
-  height: 80,
-  backgroundColor: "#FAFAFA",
-  justifyContent: "center",
-  alignItems: "center",
-  elevation: 4,
-  zIndex: 10,
-},
+  header: {
+    width: "100%",
+    height: 80,
+    backgroundColor: "#FAFAFA",
+    flexDirection: "row",     
+    justifyContent: "flex-start", 
+    alignItems: "center",    
+    paddingHorizontal: 16,    
+    elevation: 4,
+  },
+
+  
+  logo: {
+    width: 80,                
+    height: 80,
+    resizeMode: "contain",    
+    marginRight: 12,       
+  },
 
   headerText: {
     fontSize: 18,
@@ -122,9 +133,10 @@ container: {
 
 card: {
   backgroundColor: "#FFFFFF",
-  padding: 20,
+  paddingVertical: 30,
+  paddingHorizontal: 20, 
   borderRadius: 12,
-  width: "90%",
+  width: "100%",
 },
 
   title: {

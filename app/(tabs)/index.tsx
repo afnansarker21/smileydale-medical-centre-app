@@ -1,7 +1,7 @@
 // this is our home screen for the smileydale medical app :)
 
 import { useRouter } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function HomeScreen() {
@@ -12,9 +12,9 @@ export default function HomeScreen() {
 <SafeAreaView style={styles.container}>
 
   {/* Header */}
-  <View style={styles.header}>
-    <Text style={styles.headerText}>SmileyDale</Text>
-  </View>
+<View style={styles.header}>
+  <Image source={require("../../assets/images/logo.png")} style={styles.logo} />
+</View>
 
   {/* Content wrapper */}
   <View style={styles.content}>
@@ -45,14 +45,24 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
 
     header: {
-  width: "100%",
-  height: 80,
-  backgroundColor: "#FAFAFA",
-  justifyContent: "center",
-  alignItems: "center",
-  elevation: 4,
-  zIndex: 10,
-},
+    width: "100%",
+    height: 80,
+    backgroundColor: "#FAFAFA",
+    flexDirection: "row",     
+    justifyContent: "flex-start", 
+    alignItems: "center",    
+    paddingHorizontal: 16,    
+    elevation: 4,
+  },
+
+   logo: {
+    width: 80,                // Standard size that fits cleanly inside an 80px high navbar
+    height: 80,
+    resizeMode: "contain",    // Keeps your logo aspect ratio intact without stretching it
+    marginRight: 12,          // Spacing between the logo asset and the 'SmileyDale' text
+  },
+
+
 
   headerText: {
     fontSize: 18,
@@ -69,7 +79,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#DAFAEA",
     alignItems: "center",
     justifyContent: "center",
-    padding: 20,
   },
 
   card: {
