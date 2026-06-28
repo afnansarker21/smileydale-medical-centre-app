@@ -24,11 +24,11 @@ export default function HomeScreen() {
       </Text>
 
       <Pressable
-        style={styles.button}
-        onPress={() => router.push("/booking")}
-      >
-        <Text style={styles.buttonText}>Book in a GP now</Text>
-      </Pressable>
+  style={styles.button}
+  onPress={() => router.push("/bookings/finddoctor" as any)} 
+>
+  <Text style={styles.buttonText}>Book in a GP now</Text>
+</Pressable>
 
       <Text style={styles.subtitle}>
         {"\n"}SmileyDale Medical Centre is a general practice and healthcare clinic located in 71 Forest Street, Smileydale NSW.
@@ -56,10 +56,10 @@ const styles = StyleSheet.create({
   },
 
    logo: {
-    width: 80,                // Standard size that fits cleanly inside an 80px high navbar
+    width: 80,                
     height: 80,
-    resizeMode: "contain",    // Keeps your logo aspect ratio intact without stretching it
-    marginRight: 12,          // Spacing between the logo asset and the 'SmileyDale' text
+    resizeMode: "contain",    
+    marginRight: 12,         
   },
 
 
