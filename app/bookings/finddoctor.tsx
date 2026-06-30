@@ -34,7 +34,7 @@ export default function FindDoctorScreen() {
       name: "Dr. Adam Kim",
       desc: "Available Saturday 4pm-11pm and Thursday 7am-2pm.",
       image: require("../../assets/images/drkim.png"),
-      availableTypes: ["telehealth", "in-person"],
+      availableTypes: ["in-person"],
     },
 
     {
@@ -116,7 +116,7 @@ export default function FindDoctorScreen() {
                 <Pressable 
                   style={styles.bookingButton}
                   onPress={() => router.push({
-                    pathname: "/bookings/form",
+                    pathname: "/bookings/type",
                     params: { name: doc.name, type: "in-person" }
                   } as any)}
                 >
@@ -128,7 +128,7 @@ export default function FindDoctorScreen() {
                 <Pressable 
                   style={styles.bookingButton}
                   onPress={() => router.push({
-                    pathname: "/bookings/form",
+                    pathname: "/bookings/type",
                     params: { name: doc.name, type: "telehealth" }
                   } as any)}
                 >
