@@ -64,9 +64,7 @@ export default function FindDoctorScreen() {
       image: require("../../assets/images/drnguyen.png"),
       availableTypes: ["telehealth", "in-person"],
     },
-    
-
-
+  
    
   ];
 
@@ -77,6 +75,9 @@ export default function FindDoctorScreen() {
       <View style={styles.header}>
         <Image source={require("../../assets/images/logo.png")} style={styles.logo} />
       </View>
+      <Pressable onPress={() => router.back()}>
+                        <Text style={styles.backButtonText}>← Back</Text>
+                      </Pressable>
 
       {/* Content */}
       <ScrollView contentContainerStyle={styles.content}>
@@ -198,6 +199,13 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginBottom: 12,
   },
+
+   backButtonText: {
+    fontSize: 16,
+    color: "#007AFF",
+    fontWeight: "600",
+  },
+  
   image: {
     width: 100,
     height: 100,
