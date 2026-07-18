@@ -22,7 +22,7 @@ export default function OurGPsScreen() {
     },
     {
       name: "Dr. Adam Kim",
-      desc: "Dr Adam Kim has worked at Smileydale Medical Centre for 5 years. He has studied a Bachelor of Medical Studies / Doctor of Medicine (BMed/MD) at the University of New South Wales (UNSW). Dr KIm speciaises in musculoskeletal conditions and sports injuries. \n\n Knows: English and Korean.",
+      desc: "Dr Adam Kim has worked at SmileyDale Medical Centre for 5 years. He has studied a Bachelor of Medical Studies / Doctor of Medicine (BMed/MD) at the University of New South Wales (UNSW). Dr Kim specialises in musculoskeletal conditions and sports injuries. \n\n Knows: English and Korean.",
       image: require("../../assets/images/drkim.png"),
     },
     {
@@ -32,17 +32,17 @@ export default function OurGPsScreen() {
     },
     {
       name: "Dr. Khadijah Amin",
-      desc: "Dr Khadijah Amin has worked with Smileydale Medical Centre for 3 years. She has completed a Bachelor of Medical Studies / Doctor of Medicine (BMed/MD) at the University of New South Wales (UNSW). In 2021, she has interned at Prince of Wales Hospital. Dr Amin specialises in Preventative Health & Women’s Health. \n\n Knows: English, Arabic and Kurdish.",
+      desc: "Dr Khadijah Amin has worked with SmileyDale Medical Centre for 3 years. She has completed a Bachelor of Medical Studies / Doctor of Medicine (BMed/MD) at the University of New South Wales (UNSW). In 2021, she has interned at Prince of Wales Hospital. Dr Amin specialises in Preventative Health & Women’s Health. \n\n Knows: English, Arabic and Kurdish.",
       image: require("../../assets/images/dramin.png"), 
     },
     {
       name: "Dr. Akash Patel",
-      desc: "Dr. Akash Patel has worked at Smileydale Medical Centre for 10 years. He has worked as a consultant at Prince of Wales Hospital in 2011. Dr Patel specialises in General Practice and Men’s Health. \n\n Knows: English, Gujarati, Hindi and Telugu.",
+      desc: "Dr. Akash Patel has worked at SmileyDale Medical Centre for 10 years. He has worked as a consultant at Prince of Wales Hospital in 2011. Dr Patel specialises in General Practice and Men’s Health. \n\n Knows: English, Gujarati, Hindi and Telugu.",
       image: require("../../assets/images/drpatel.png"), 
     },
     {
       name: "Dr. Cindy Nguyen",
-      desc: "Dr. Cindy Nguyen has worked at Smileydale Medical Centre for over a year. She has studied a Bachelor of Applied Science (Physiotherapy) at the University of Sydney (USyd), additionally completed a Doctor of Medicine (MD).  Dr Cindy takes care of Rehabilitation, Injury Management, paediatrics and women’s health advocate. \n\n Knows: English, Vietnamese and Mandarin.",
+      desc: "Dr. Cindy Nguyen has worked at SmileyDale Medical Centre for over a year. She has studied a Bachelor of Applied Science (Physiotherapy) at the University of Sydney (USyd), additionally completed a Doctor of Medicine (MD).  Dr Cindy takes care of Rehabilitation, Injury Management, paediatrics and women’s health advocate. \n\n Knows: English, Vietnamese and Mandarin.",
       image: require("../../assets/images/drnguyen.png"), 
     },
   ];
