@@ -31,7 +31,7 @@ export default function HomeScreen() {
 </Pressable>
 
       <Text style={styles.subtitle}>
-        {"\n"}SmileyDale Medical Centre is a general practice and healthcare clinic located in 71 Forest Street, Smileydale NSW.
+        {"\n"}SmileyDale Medical Centre is a general practice and healthcare clinic located in 71 Forest Street, Smileydale NSW 2780.
         {"\n\n"}
         We are open from Monday to Sunday, everyday from 7am-11pm.
       </Text>

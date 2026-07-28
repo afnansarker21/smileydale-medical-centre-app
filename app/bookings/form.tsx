@@ -184,6 +184,8 @@ export default function BookingForm() {
         }
     };
 
+
+
     return (
         <SafeAreaView style={styles.container}>
             {/* Header */}
@@ -311,14 +313,19 @@ export default function BookingForm() {
                                 onChangeText={setChildLastName} 
                             />
                             <TextInputMask
-                                type={'datetime'}
-                                options={{ format: 'DD/MM/YYYY' }}
-                                value={childDOB}
-                                onChangeText={(text: string) => handleDobChange(text, true)}
-                                style={styles.input}
-                                placeholder="Child's DOB (DD/MM/YYYY)"
-                                keyboardType="numeric"
-                            />
+                            type={'datetime'}
+                            options={{ format: 'DD/MM/YYYY' }}
+                            value={childDOB}
+                            onChangeText={(text: string) => handleDobChange(text, true)}
+                            style={styles.input}
+                            placeholder="Child's DOB (DD/MM/YYYY)"
+                            keyboardType="numeric"
+                        />
+                        {dobError !== "" && !isForSelf && (
+                            <Text style={{ color: 'red', fontSize: 12, marginBottom: 10, marginTop: -5, marginLeft: 5 }}>
+                                {dobError}
+                            </Text>
+                        )}
                         </View>
                     )}
 

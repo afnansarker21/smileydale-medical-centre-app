@@ -64,7 +64,7 @@ export default function ServicesScreen() {
           </View>
 
           <Text style={styles.subtitle}>
-            {"\n"}If you have any questions, call <Text style={{ fontWeight: "bold" }}>(02) 8731 9829</Text> or email <Text style={{ fontWeight: "bold" }}>info@smileydalemedical.com.au</Text>.
+            {"\n"}If you have any questions, call <Text style={{ fontWeight: "bold" }}>(02) 8731 9829</Text> or email <Text style={{ fontWeight: "bold" }}>info@smileydalemedical.com.au. {"\n"}Local nearby hospital:</Text> Smileydale Hospital, 31 Amber Street, Smileydale NSW 2780.
             {"\n\n"}Other services within NSW:
           </Text>
 
@@ -147,7 +147,7 @@ card: {
   },
   subtitle: {
     fontSize: 16,
-    color: "#555",
+    color: "#000000",
     marginBottom: 30,
     textAlign: "left",
   },
