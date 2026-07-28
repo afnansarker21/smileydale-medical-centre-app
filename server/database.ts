@@ -8,7 +8,15 @@ db.serialize(() => {
     doctor_name TEXT NOT NULL,
     date TEXT NOT NULL,
     time TEXT NOT NULL,
-    type TEXT NOT NULL
+    type TEXT NOT NULL,
+    dob TEXT NOT NULL,
+    phone_number TEXT NOT NULL,
+    email TEXT NOT NULL,
+    medicare_card_number TEXT NOT NULL,
+    full_name_on_card TEXT NOT NULL,
+    expiry_date TEXT NOT NULL,
+    gender TEXT NOT NULL,
+    reason_for_visit TEXT NOT NULL
   )`);
 });
 
